@@ -10,7 +10,7 @@ config_version=5
 
 [application]
 
-config/name="Youtube Turorial 1"
+config/name="Platformer Hacker-Space SJ 25/26"
 run/main_scene="uid://cvsye3gcbnlv"
 config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://icon.svg"
