@@ -117,4 +117,7 @@ tile_map_data = PackedByteArray("AAAAAA0AAAABAAAAAAABAA0AAAABAAAAAAACAA0AAAABAAA
 tile_set = SubResource("TileSet_vkbyq")
 
 [node name="Player" parent="." instance=ExtResource("1_7lnir")]
-position = Vector2(225, 117)
+position = Vector2(202, 112)
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+metadata/_edit_group_ = true
