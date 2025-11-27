@@ -1,7 +1,7 @@
 [gd_scene load_steps=20 format=3 uid="uid://dsjdc5qrhkutg"]
 
 [ext_resource type="Texture2D" uid="uid://j3vyefj4eavp" path="res://assets/Character base.png" id="1_oul6g"]
-[ext_resource type="Script" uid="uid://cmi76k14ggq3a" path="res://player/player.gd" id="1_rkbax"]
+[ext_resource type="Script" path="res://player/player.gd" id="1_rkbax"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_rkbax"]
 atlas = ExtResource("1_oul6g")
@@ -131,7 +131,7 @@ script = ExtResource("1_rkbax")
 sprite_frames = SubResource("SpriteFrames_hg6s5")
 animation = &"run"
 autoplay = "idle"
-frame_progress = 0.7416129
+frame_progress = 0.741613
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 visible = false
