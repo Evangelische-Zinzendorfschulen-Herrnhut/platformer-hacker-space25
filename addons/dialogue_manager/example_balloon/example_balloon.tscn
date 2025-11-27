@@ -73,13 +73,10 @@ layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-<<<<<<< HEAD
 offset_left = -5.0
 offset_top = 20.0
 offset_right = -5.0
 offset_bottom = 20.0
-=======
->>>>>>> bc0eae8cc16ec7dab457baee0c92719cccf12232
 grow_horizontal = 2
 grow_vertical = 2
 theme = SubResource("Theme_qq3yp")
@@ -91,15 +88,9 @@ anchors_preset = 12
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-<<<<<<< HEAD
 offset_left = 6.0
 offset_top = -111.0
 offset_right = 4.0
-=======
-offset_left = 21.0
-offset_top = -183.0
-offset_right = -19.0
->>>>>>> bc0eae8cc16ec7dab457baee0c92719cccf12232
 offset_bottom = -19.0
 grow_horizontal = 2
 grow_vertical = 0
@@ -110,12 +101,9 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-<<<<<<< HEAD
 offset_left = -22.0
 offset_top = -14.0
 offset_right = -208.0
-=======
->>>>>>> bc0eae8cc16ec7dab457baee0c92719cccf12232
 grow_horizontal = 2
 grow_vertical = 2
 
@@ -136,10 +124,7 @@ scroll_active = false
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_vertical = 3
-<<<<<<< HEAD
 theme_override_font_sizes/normal_font_size = 8
-=======
->>>>>>> bc0eae8cc16ec7dab457baee0c92719cccf12232
 text = "Dialogue..."
 
 [node name="Responses" type="MarginContainer" parent="Balloon"]
@@ -149,17 +134,10 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-<<<<<<< HEAD
 offset_left = -14.0
 offset_top = -187.0
 offset_right = 242.0
 offset_bottom = -13.0
-=======
-offset_left = -147.0
-offset_top = -558.0
-offset_right = 494.0
-offset_bottom = -154.0
->>>>>>> bc0eae8cc16ec7dab457baee0c92719cccf12232
 grow_horizontal = 2
 grow_vertical = 0
 
@@ -173,10 +151,7 @@ response_template = NodePath("ResponseExample")
 
 [node name="ResponseExample" type="Button" parent="Balloon/Responses/ResponsesMenu"]
 layout_mode = 2
-<<<<<<< HEAD
 theme_override_font_sizes/font_size = 8
-=======
->>>>>>> bc0eae8cc16ec7dab457baee0c92719cccf12232
 text = "Response example"
 
 [connection signal="gui_input" from="Balloon" to="." method="_on_balloon_gui_input"]
