@@ -15,10 +15,6 @@ run/main_scene="res://level/level.tscn"
 config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://icon.svg"
 
-[autoload]
-
-DialogueManager="*res://addons/dialogue_manager/dialogue_manager.gd"
-
 [display]
 
 window/size/viewport_width=480
@@ -26,10 +22,6 @@ window/size/viewport_height=270
 window/size/window_width_override=960
 window/size/window_height_override=540
 window/stretch/mode="viewport"
-
-[editor_plugins]
-
-enabled=PackedStringArray("res://addons/dialogue_manager/plugin.cfg")
 
 [input]
 
