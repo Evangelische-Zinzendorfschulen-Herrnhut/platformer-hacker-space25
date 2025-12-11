@@ -1,8 +1,7 @@
-[gd_scene load_steps=6 format=4 uid="uid://cvsye3gcbnlv"]
+[gd_scene load_steps=5 format=4 uid="uid://cvsye3gcbnlv"]
 
 [ext_resource type="Texture2D" uid="uid://drvv1ieheo2nl" path="res://assets/Tiles 16x16.png" id="1_5gx2l"]
 [ext_resource type="PackedScene" uid="uid://dsjdc5qrhkutg" path="res://player/player.tscn" id="1_7lnir"]
-[ext_resource type="PackedScene" uid="uid://by21kusuyg8d2" path="res://NPC's/Npc/npc.tscn" id="3_51lvl"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qohg2"]
 texture = ExtResource("1_5gx2l")
@@ -116,9 +115,6 @@ sources/0 = SubResource("TileSetAtlasSource_qohg2")
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
 tile_map_data = PackedByteArray("AAAAAA0AAAABAAAAAAABAA0AAAABAAAAAAACAA0AAAABAAAAAAADAA0AAAAFAAEAAAAEAA0AAAABAAEAAAAFAA0AAAABAAEAAAAGAA0AAAABAAEAAAAHAA0AAAABAAEAAAAIAA0AAAAEAAEAAAAJAA0AAAABAAAAAAAKAA0AAAABAAAAAAALAA0AAAABAAAAAAAMAA0AAAABAAAAAAANAA0AAAABAAAAAAAOAA0AAAABAAAAAAAPAA0AAAABAAAAAAAQAA0AAAABAAAAAAARAA0AAAABAAAAAAASAA0AAAAFAAEAAAATAA0AAAABAAEAAAAUAA0AAAABAAEAAAAVAA0AAAAEAAEAAAAWAA0AAAABAAAAAAAXAA0AAAABAAAAAAAYAA0AAAABAAAAAAAZAA0AAAABAAAAAAAaAA0AAAABAAAAAAAbAA0AAAABAAAAAAAcAA0AAAABAAAAAAAdAA0AAAABAAAAAAASAAwAAAAAAAAAAAATAAwAAAABAAAAAAAUAAwAAAABAAAAAAAVAAwAAAACAAAAAAADAAwAAAAAAAAAAAAEAAwAAAABAAAAAAAFAAwAAAABAAAAAAAGAAwAAAABAAAAAAAHAAwAAAABAAAAAAAIAAwAAAACAAAAAAA=")
 tile_set = SubResource("TileSet_vkbyq")
-
-[node name="Npc" parent="." instance=ExtResource("3_51lvl")]
-position = Vector2(323, 192)
 
 [node name="Player" parent="." instance=ExtResource("1_7lnir")]
 position = Vector2(225, 117)
