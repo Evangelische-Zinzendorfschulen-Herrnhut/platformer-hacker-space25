@@ -27,9 +27,11 @@ func _physics_process(delta: float) -> void:
 	try_jump()
 	apply_variable_jump(delta)
 	
+	# hold last velocity if it is not ZERO
 	if velocity != Vector2.ZERO:
 		last_velocity = velocity
 	beam_me()
+	
 	# Bewegung anwenden
 	move_and_slide()
 
@@ -98,8 +100,7 @@ func apply_variable_jump(_delta: float) -> void:
 	if Input.is_action_just_released("jump") and velocity.y < 0.0:
 		velocity.y *= variable_jump_factor
 		
-# beam the player 500 px in velocity direction
+# beam the player 100px in velocity direction
 func beam_me(beam_width: int = 100) -> void:
 	if Input.is_action_just_pressed('beam_me'):
-		print('just beamed')
 		position += last_velocity.normalized() * beam_width
