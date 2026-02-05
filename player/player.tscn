@@ -138,3 +138,5 @@ frame_progress = 0.741613
 visible = false
 position = Vector2(0, 5.5)
 shape = SubResource("RectangleShape2D_8t03j")
+
+[node name="Camera2D" type="Camera2D" parent="."]

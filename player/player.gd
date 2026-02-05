@@ -4,7 +4,7 @@ extends CharacterBody2D
 # --- Tuning-Parameter ---
 @export var gravity: float = 1800.0        # Pixel/s^2
 @export var move_speed: float = 260.0      # Pixel/s
-@export var jump_speed: float = 150.0      # Anfangs-Sprunggeschwindigkeit (nach oben)
+@export var jump_speed: float = 300.0      # Anfangs-Sprunggeschwindigkeit (nach oben)
 @export var max_air_jumps: int = 1         # 1 = Double Jump, 2 = Triple Jump, usw.
 
 # Optional: Komfort-Funktionen
@@ -16,6 +16,9 @@ extends CharacterBody2D
 var air_jumps_left: int = max_air_jumps
 var coyote_timer: float = 0.0
 var jump_buffer_timer: float = 0.0
+# vars for beam action
+var last_velocity: Vector2 = Vector2.ZERO
+@export var beam_width: int = 100
 
 func _physics_process(delta: float) -> void:
 	handle_horizontal_move(delta)
@@ -23,7 +26,10 @@ func _physics_process(delta: float) -> void:
 	read_jump_input()
 	try_jump()
 	apply_variable_jump(delta)
-
+	
+	if velocity != Vector2.ZERO:
+		last_velocity = velocity
+	beam_me()
 	# Bewegung anwenden
 	move_and_slide()
 
@@ -91,3 +97,9 @@ func apply_variable_jump(_delta: float) -> void:
 	# Wenn Sprungtaste losgelassen und wir noch aufwärts fliegen, kürzen
 	if Input.is_action_just_released("jump") and velocity.y < 0.0:
 		velocity.y *= variable_jump_factor
+		
+# beam the player 500 px in velocity direction
+func beam_me(beam_width: int = 100) -> void:
+	if Input.is_action_just_pressed('beam_me'):
+		print('just beamed')
+		position += last_velocity.normalized() * beam_width
